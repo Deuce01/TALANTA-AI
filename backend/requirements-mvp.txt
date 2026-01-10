@@ -1,0 +1,75 @@
+# TALANTA AI - MVP Requirements (Lightweight)
+# Use this for quick setup without heavy ML dependencies
+
+# Core Framework
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.9
+
+# Database - Relational
+sqlalchemy>=2.0.25
+asyncpg>=0.29.0
+alembic>=1.13.1
+psycopg2-binary>=2.9.9
+
+# Database - Graph
+neo4j>=5.16.0
+
+# Database - Cache & Queue
+redis>=5.0.1
+celery>=5.3.6
+kombu>=5.3.5
+
+# Object Storage
+boto3>=1.34.34
+botocore>=1.34.34
+
+# Minimal NLP (for keyword extraction)
+spacy>=3.7.2
+phonenumbers>=8.13.29
+
+# Security & Authentication
+passlib[bcrypt]>=1.7.4
+python-jose[cryptography]>=3.3.0
+cryptography>=42.0.2
+
+# Configuration & Environment
+pydantic>=2.6.0
+pydantic-settings>=2.1.0
+python-dotenv>=1.0.1
+
+# HTTP & Requests
+httpx>=0.26.0
+aiohttp>=3.9.3
+
+# Utilities
+python-dateutil>=2.8.2
+pytz>=2024.1
+
+# Testing (Development)
+pytest>=8.0.0
+pytest-asyncio>=0.23.4
+pytest-cov>=4.1.0
+
+# Monitoring & Logging
+loguru>=0.7.2
+
+# Data Validation
+email-validator>=2.1.0
+
+# =================================================================
+# OPTIONAL: Uncomment these for production with full ML features
+# =================================================================
+
+# AI & ML (Heavy dependencies - only install if needed)
+# langchain>=0.1.6
+# langchain-community>=0.0.19
+# sentence-transformers>=2.3.1
+# torch>=2.1.2
+# transformers>=4.37.2
+
+# OCR (Heavy dependencies - only install if needed)
+# paddlepaddle>=2.6.0
+# paddleocr>=2.7.0.3
+# Pillow>=10.2.0
+# opencv-python-headless>=4.9.0.80
